@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap');
+*{
+    padding: 0;
+    margin: 5px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #01204E;
+}
+body{
+    /* background-color: ; */
+    height: 100vh;
+    width: 99%;
+    background: rgb(255,243,220);
+background: linear-gradient(118deg, rgba(255,243,220,0.8128501400560224) 3%, rgba(199,235,255,1) 100%);
+}
+nav{
+    /* border: 1px solid black; */
+    width: 100%;
+    max-height: 70px;
+    /* position: fixed;
+    background-color: #fff; */
+   
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_logo img{
+
+    height: 150px;
+    width: 170px;
+}
+.nav_content{
+    margin-top: 25px;
+    padding: 2px;
+    margin-right: 20px;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    padding: 5px;
+}
+ul a{
+   
+    text-decoration: none;
+    color: #01204E;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+ul a:hover{
+    border-top-color: #01204E;
+    border-bottom-color: #01204E;
+}
+.section1{
+    height: 90vh;
+    /* border: 1px solid black;yeh hatana hhai  */
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.section_content{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+    margin: 10px;
+}
+.section_photo {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; 
+    transition: all 0.5s ease-in;
+    /* border: 1px solid #01204E; */
+}
+
+.section_photo:hover .vector {
+    transform: translate(-6px, 10px);   
+}
+
+.section_photo:hover .myphoto {
+    transform: translate(16px, -15px);
+    transform: scale(1.1);
+}
+
+.section_photo .myphoto {
+    height: 80%;
+    position: absolute;
+    bottom: 10px; 
+    left: 0; 
+    z-index: 2; 
+    transition: all 0.5s ease-in-out;
+}
+
+.section_photo .vector {
+    height: 400px;
+    width: 400px;
+    position: absolute; 
+    top: 150px; 
+    left: 0; 
+    z-index: 1;
+    transition: all 0.5s linear;
+}
+.section_content h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    margin-bottom: 10px;
+ 
+}
+.section_content .surname{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.section_content p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.resume{
+    max-width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #FFFAE6;
+    border-color: #1178c2;
+    transition: all 0.2s linear;
+    font-size: medium;
+    
+}
+.resume:hover{
+    transform: translateY(-2px);
+    background-color:#01204E;
+    box-shadow: 0px 5px 9px 5px #ffe9ae
+}
+.resume:hover a{
+    color: white;
+}
+
+
+.section2{
+    /* height: 650px; */
+}
+.section2 h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+.project_list{
+    height: 70%;
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    row-gap: 5px;
+    grid-template-rows: repeat(3,1fr);
+}
+.projects{
+    display: flex;
+    justify-content: space-between;
+}
+.projects img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+.project_content a{
+    text-decoration: none;
+}
+.section3{
+    display: flex;
+    justify-content: center;
+}
+.heading{
+    border: 2px solid transparent;
+    border-top-color: #01204E;
+    margin-top: 50px;
+}
+.heading h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 60px;
+}
+.section_pdf{
+    position:  static;
+    margin-top: 50px;
+    height:80vh !important;
+    width: 75%;
+}
+footer{
+    height: 200px;
+    width: 100%;
+    border: 2px solid transparent;
+    border-top-color: #01204E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer_content1{
+    margin-bottom: 10px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.socialmedia{
+    color: black;
+    transition: all 0.2s linear;
+}
+.socialmedia:hover{
+    transform: scale(1.4);
+}
+.leetcode{
+    max-width: 30px;
+    max-height: 30px;
+}
+.section_content2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section_content2 p{
+    color: #01204E;
+    font-size: 20px;
+}
+.contact{
+    color: #01204E;
+    font-size: 20px;
+}
+@media (max-width: 750px) {
+    .nav .nav_content {
+        display: none;
+    }
+    .nav {
+        justify-content: center;
+    }
+
+    /* Adjusting section1 layout for smaller screens */
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section_photo {
+        width: 300px !important;
+     }
+
+    .section_content {
+        order: 2;
+        padding: 0;
+        margin: 0;
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+    .section_photo{
+        width:100%;
+        height:100vh;
+        
+    }
+
+    .section_photo :hover{
+        transition: all 0.5s linear;
+        
+    }
+    
+    .myphoto,
+    .vector {
+        /* position:static; */
+        height:250px !important;
+        width:  270px !important;
+        margin:auto !important;        /* height: 190vh; */
+         /* Adjust the size for responsiveness */
+    }
+     .resume{
+        margin:auto !important;
+     }
+     .section2 h1{
+        margin-left:25%;
+     }
+    .section_content h1 {
+        
+        font-size: 50px; /* Adjust the font size for smaller screens */
+    }
+
+    .section_content p {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+}
